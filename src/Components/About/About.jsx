@@ -15,8 +15,8 @@ const About = () => {
       
 
       <ul className="mb-0 justify-content-center ">
-						<li className="breadcrumb-item"><a href="index.html" className="text-white">Home</a></li>
-						<li className="breadcrumb-item text-primary-color">About Us</li>
+						<li className="breadcrumb-item"><a href="index.html" className="text-white font-medium">Home / <span className="text-[#FF7906]">About Us</span> </a></li>
+						
 					</ul>
     </div>
   </div>
@@ -25,12 +25,12 @@ const About = () => {
 
 <section className="py-10 bg-white sm:py-16 lg:py-24">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
-        <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12 font-rajdhani">
+        <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12 font-rajdhani mx-22">
             
             <div className="relative lg:mb-12">
             
-                <div className="pl-12 pr-6">
-                    <img className="relative" src="https://webextheme.com/html/loxicat/images/about/about.png" alt="" />
+                <div className="pl-6 pr-2 ">
+                    <img className="relative h-[581px] w-auto" src="https://webextheme.com/html/loxicat/images/about/about.png" alt="" />
                 </div>
                 <div className="absolute left-0 pr-12 bottom-8 xl:bottom-20">
                     <div className="max-w-xs bg-blue-600 rounded-lg sm:max-w-md xl:max-w-md">
@@ -39,15 +39,41 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="2xl:pl-16 font-rajdhani">
-                <div className="text-[#FF7906] font-semibold   "><h5 className="underline underline-offset-4">Welcome to Loxicat Industry </h5></div>
-                <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">Most Leading Industrial Service Provider.</h2>
-                <p className="text-base  text-gray-900 mt-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque, maxime aliquam cum odio aut ex, et blanditiis corporis rerum unde vitae nihil. Eius porro sunt temporibus soluta libero voluptatum.</p>
-                <p className="mt-3 text-base text-gray-900">*Quality Control System, 100% Satisfaction Guarantee</p>
-                <p className="mt-3 text-base text-gray-900">*Expertise & Innovation from a truly global company</p>
-                <p className="mt-3 text-base text-gray-900">*Leading Industrial Services Provider Company</p>
-                <p className="mt-3 text-base text-gray-900">*Highly Professional Staff, Accurate Testing Processes</p>
-                <button className=" btn btn-link text-white no-underline bg-[#FF7906] border-[#FF7906] mt-20 px-10"> About Us</button>
+            <div className="2xl:pl-6 font-rajdhani">
+                <div className="text-[#FF7906] font-semibold   "><h5 className="underline underline-offset-4 ">Welcome to Loxicat Industry </h5></div>
+                <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight ">Most Leading Industrial Service Provider.</h2>
+                <p className="text-base  text-gray-900 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque, maxime aliquam cum odio aut ex, et blanditiis corporis rerum unde vitae nihil. Eius porro sunt temporibus soluta libero voluptatum.</p>
+                
+                
+                <span className="flex items-center ">
+                <img className="h-[20px] " src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
+                <p className="my-4 pl-2  text-base text-gray-900">Quality Control System, 100% Satisfaction Guarantee</p> 
+                </span>
+
+                <span className="flex items-center ">
+                <img className="h-[20px] " src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
+                <p className="my-4 pl-2  text-base text-gray-900">Expertise & Innovation from a truly global company</p> 
+                </span>
+
+                <span className="flex items-center ">
+                <img className="h-[20px] " src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
+                <p className="my-4 pl-2  text-base text-gray-900">Leading Industrial Services Provider Company</p> 
+                </span>
+
+                <span className="flex items-center ">
+                <img className="h-[20px] " src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
+                <p className="my-4 pl-2  text-base text-gray-900">Highly Professional Staff, Accurate Testing Processes</p> 
+                </span>
+                
+                
+                
+                  
+                  
+               
+                
+                <button className="  text-white  bg-[#FF7906] border-[#FF7906] py-4 px-16 text-2xl my-5  items-center rounded-md font-medium mb-24 "> 
+                  <p className="">About Us</p>
+                </button>
             </div>
         </div>
     </div>
@@ -55,33 +81,59 @@ const About = () => {
 
 
 
-<div className="grid lg:grid-cols-3 md:grid-cols- sm:grid-cols- container mx-auto ml-36 my-28 font-rajdhani" > {/**cards */}
+<div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 container mx-auto ml-36 mb-32 font-rajdhani" > {/**cards */}
 
 
-    <div className="card bg-base-100 w-96 shadow-2xl rounded-none">
+    {/**GROUP HOVER */}
+    
 
-    <div className="card-body   mb-2 ml-16 ">
-        <h2 className="card-title text-[#FF7907]">Skilled Engineer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse minima molestias officia veniam.</p>
-        <div className="card-actions justify-end">
-        </div>
+    <div className="group card bg-base-100 w-96 h-auto shadow-2xl rounded-none  hover:bg-[#FF7907] transition-all duration-300 ">
+          <div className="card-body mb-2  grid grid-cols-4 items-start ">
+          <div className="group-hover:stroke-white col-span-1">
+            <img className="h-[70px]  " src="https://i.postimg.cc/WpfGZB9V/engineer.png" alt="" />
+          </div>
+
+          <div className="col-span-3">
+          <h2 className=" group-hover:text-white card-title text-[#FF7907] ">Skilled Engineer</h2>
+          <p className="group-hover:text-white ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero natus voluptatibus ea repudiandae vero?</p>
+          </div>
+        
+        
+        
     </div>
     </div>
 
-    <div className="card bg-[#FF7907] text-[#FFFFFF] w-96 shadow-2xl rounded-none ">
-    <div className="card-body mb-2 ml-16  ">
-        <h2 className="card-title">Modern Machines</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse minima molestias officia veniam.</p>
-        <div className="card-actions justify-end">
-        </div>
+    <div className=" card bg-[#FF7907] w-96 h-auto shadow-2xl rounded-none  ">
+          <div className="card-body mb-2  grid grid-cols-4 items-start ">
+          <div className="group-hover:stroke-white col-span-1">
+            <img className="h-[70px]  " src="https://i.postimg.cc/vZd4knbP/crane.png" alt="" />
+          </div>
+
+          <div className="col-span-3">
+          <h2 className=" text-white card-title ">Modern Machines</h2>
+          <p className="text-white ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero natus voluptatibus ea repudiandae vero?</p>
+          </div>
+        
+        
+        
     </div>
     </div>
-    <div className="card bg-base-100 w-96 shadow-2xl rounded-none">
-    <div className="card-body mb-2 ml-16 ">
-        <h2 className="card-title text-[#FF7907]">Quality Service</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse minima molestias officia veniam.</p>
-        <div className="card-actions justify-end">
-        </div>
+
+
+
+    <div className="group card bg-base-100 w-96 h-auto shadow-2xl rounded-none  hover:bg-[#FF7907] transition-all duration-300 ">
+          <div className="card-body mb-2  grid grid-cols-4 items-start ">
+          <div className="group-hover:stroke-white col-span-1">
+            <img className="h-[70px]  " src="https://i.postimg.cc/dV8Wdgq5/skyline.png" alt="" />
+          </div>
+
+          <div className="col-span-3">
+          <h2 className=" group-hover:text-white card-title text-[#FF7907] ">Quality Service</h2>
+          <p className="group-hover:text-white ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero natus voluptatibus ea repudiandae vero?</p>
+          </div>
+        
+        
+        
     </div>
     </div>
 
