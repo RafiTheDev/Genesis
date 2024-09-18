@@ -14,7 +14,7 @@ const About = () => {
       
       
 
-      <ul className="mb-0 justify-content-center ">
+      <ul className="mb-0 justify-content-center text-lg ">
 						<li className="breadcrumb-item"><a href="index.html" className="text-white font-medium">Home / <span className="text-[#FF7906]">About Us</span> </a></li>
 						
 					</ul>
@@ -23,7 +23,7 @@ const About = () => {
 </div>
 
 
-<section className="py-10 bg-white sm:py-16 lg:py-24">
+<section className="py- bg-white sm:py-16 lg:py-24">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
         <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12 font-rajdhani mx-22">
             
@@ -40,7 +40,7 @@ const About = () => {
             </div>
 
             <div className="2xl:pl-6 font-rajdhani">
-                <div className="text-[#FF7906] font-semibold   "><h5 className="underline underline-offset-4 ">Welcome to Loxicat Industry </h5></div>
+                <div className="text-[#FF7906] font-semibold text-lg  "><h5 className="underline underline-offset-4 ">Welcome to Loxicat Industry </h5></div>
                 <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight ">Most Leading Industrial Service Provider.</h2>
                 <p className="text-base  text-gray-900 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque, maxime aliquam cum odio aut ex, et blanditiis corporis rerum unde vitae nihil. Eius porro sunt temporibus soluta libero voluptatum.</p>
                 
@@ -72,7 +72,7 @@ const About = () => {
                
                 
                 <button className="  text-white  bg-[#FF7906] border-[#FF7906] py-4 px-16 text-2xl my-5  items-center rounded-md font-medium mb-24 "> 
-                  <p className="">About Us</p>
+                  <p className="">ABOUT US</p>
                 </button>
             </div>
         </div>
@@ -140,7 +140,7 @@ const About = () => {
 </div>
 
 <div >     {/* testimonials*/}
-<section className="py-10 bg-[#0c2239] sm:py-16 lg:py-24">
+<section className="py-10 bg-[#0c2239] sm:py-16 lg:py-24 font-rajdhani">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center ">
             <h5 className=" text-lg  text-[#FF7907] underline underline-offset-2">Our Testimonials</h5>
