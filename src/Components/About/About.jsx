@@ -71,7 +71,7 @@ const About = () => {
                   
                
                 
-                <button className="  text-white  bg-[#FF7906] border-[#FF7906] py-4 px-16 text-2xl my-5  items-center rounded-md font-medium mb-24 "> 
+                <button className="  text-white hover:bg-[#DC6600]  bg-[#FF7906] border-[#FF7906] py-4 px-16 text-2xl my-5  items-center rounded-md font-medium mb-24 "> 
                   <p className="">ABOUT US</p>
                 </button>
             </div>
