@@ -2,86 +2,93 @@
 const About = () => {
   return (
     <div>
-        <div
-  className="hero h-80 font-rajdhani"
+       <div
+  className="hero h-[350px] font-rajdhani relative"
   style={{
-    backgroundImage: "url(https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds-1024x498.png)",
-  }}>
-  <div className="hero-overlay bg-opacity-60"></div>
-  <div className="hero-content text-neutral-content text-center">
+    backgroundImage: "url(https://webextheme.com/html/loxicat/images/bg/2.jpg)",
+    backgroundSize: "cover", // Ensure background image covers the div fully
+    backgroundPosition: "center", // Center the image
+  }}
+>
+  <div className="hero-overlay bg-black bg-opacity-60 absolute inset-0"></div>
+  <div className="hero-content text-neutral-content text-center relative z-10">
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold mt-20">ABOUT US</h1>
-      
-      
 
-      <ul className="mb-0 justify-content-center text-lg ">
-						<li className="breadcrumb-item"><a href="index.html" className="text-white font-medium">Home / <span className="text-[#FF7906]">About Us</span> </a></li>
-						
-					</ul>
+      <ul className="mb-0 justify-content-center text-lg flex items-center space-x-2">
+        <li className="breadcrumb-item">
+          <a href="index.html" className="text-white font-medium">
+            Home
+          </a>
+          <span className="text-white mx-2">/</span>
+        </li>
+        <li className="breadcrumb-item">
+          <span className="text-[#FF7906]">About Us</span>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
 
 
-<section className="py- bg-white sm:py-16 lg:py-24">
-    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
-        <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12 font-rajdhani mx-22">
-            
-            <div className="relative lg:mb-12">
-            
-                <div className="pl-6 pr-2 ">
-                    <img className="relative h-[581px] w-auto" src="https://webextheme.com/html/loxicat/images/about/about.png" alt="" />
-                </div>
-                <div className="absolute left-0 pr-12 bottom-8 xl:bottom-20">
-                    <div className="max-w-xs bg-blue-600 rounded-lg sm:max-w-md xl:max-w-md">
-                        
-                    </div>
-                </div>
-            </div>
 
-            <div className="2xl:pl-6 font-rajdhani">
-                <div className="text-[#FF7906] font-semibold text-lg  "><h5 className="underline underline-offset-4 ">Welcome to Loxicat Industry </h5></div>
-                <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight ">Most Leading Industrial Service Provider.</h2>
-                <p className="text-base  text-gray-900 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque, maxime aliquam cum odio aut ex, et blanditiis corporis rerum unde vitae nihil. Eius porro sunt temporibus soluta libero voluptatum.</p>
-                
-                
-                <span className="flex items-center ">
-                <img className="h-[20px] " src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
-                <p className="my-4 pl-2  text-base text-gray-900">Quality Control System, 100% Satisfaction Guarantee</p> 
-                </span>
+{/*Welcome to loxicat industry */}
 
-                <span className="flex items-center ">
-                <img className="h-[20px] " src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
-                <p className="my-4 pl-2  text-base text-gray-900">Expertise & Innovation from a truly global company</p> 
-                </span>
 
-                <span className="flex items-center ">
-                <img className="h-[20px] " src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
-                <p className="my-4 pl-2  text-base text-gray-900">Leading Industrial Services Provider Company</p> 
-                </span>
+<section 
+  className=" bg-white sm:py-16 lg:p-2 font-rajdhani bg-cover bg-center relative mt-28" 
+  style={{ backgroundImage: "url('https://webextheme.com/html/loxicat/images/bg/ac2.png')" }}>
+  
+  {/* Optional: Add a semi-transparent overlay */}
+  
 
-                <span className="flex items-center ">
-                <img className="h-[20px] " src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
-                <p className="my-4 pl-2  text-base text-gray-900">Highly Professional Staff, Accurate Testing Processes</p> 
-                </span>
-                
-                
-                
-                  
-                  
-               
-                
-                <button className="  text-white hover:bg-[#DC6600]  bg-[#FF7906] border-[#FF7906] py-4 px-16 text-2xl my-5  items-center rounded-md font-medium mb-24 "> 
-                  <p className="">ABOUT US</p>
-                </button>
-            </div>
+  <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12 font-rajdhani mx-22">
+      
+      <div className="relative lg:mb-12">
+        <div className="pl-6 pr-2">
+          <img className="relative h-[581px] w-auto" src="https://webextheme.com/html/loxicat/images/about/about.png" alt="" />
         </div>
+        <div className="absolute left-0 pr-12 bottom-8 xl:bottom-20">
+          <div className="max-w-xs bg-blue-600 rounded-lg sm:max-w-md xl:max-w-md"></div>
+        </div>
+      </div>
+
+      <div className="2xl:pl-6 font-rajdhani">
+        <div className="text-[#FF7906] font-semibold text-lg">
+          <h5 className="underline underline-offset-4">Welcome to Loxicat Industry</h5>
+        </div>
+        <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
+          Most Leading Industrial Service Provider.
+        </h2>
+        <p className="text-base text-gray-900">Lorem ipsum dolor sit amet...</p>
+
+        {/* Features */}
+        <span className="flex items-center">
+          <img className="h-[20px]" src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
+          <p className="my-4 pl-2 text-base text-gray-900">Quality Control System, 100% Satisfaction Guarantee</p>
+        </span>
+        <span className="flex items-center">
+          <img className="h-[20px]" src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
+          <p className="my-4 pl-2 text-base text-gray-900">Expertise & Innovation from a truly global company</p>
+        </span>
+        <span className="flex items-center">
+          <img className="h-[20px]" src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
+          <p className="my-4 pl-2 text-base text-gray-900">Leading Industrial Services Provider Company</p>
+        </span>
+        <span className="flex items-center">
+          <img className="h-[20px]" src="https://i.postimg.cc/xTvLZXff/geometric.png" alt="" />
+          <p className="my-4 pl-2 text-base text-gray-900">Highly Professional Staff, Accurate Testing Processes</p>
+        </span>
+
+        <button className="text-white hover:bg-[#DC6600] bg-[#FF7906] border-[#FF7906] py-4 px-16 text-2xl my-5 items-center rounded-md font-medium mb-24">
+          <p>ABOUT US</p>
+        </button>
+      </div>
     </div>
-</section>
+  </div>
 
-
-
-<div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 container mx-auto ml-36 mb-32 font-rajdhani" > {/**cards */}
+  <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 container mx-auto ml-36 mb-32 font-rajdhani " > {/**cards */}
 
 
     {/**GROUP HOVER */}
@@ -138,8 +145,16 @@ const About = () => {
     </div>
 
 </div>
+</section>
 
-<div >     {/* testimonials*/}
+
+
+
+
+
+
+{/* testimonials*/}
+<div >     
 <section className="py-10 bg-[#0c2239] sm:py-16 lg:py-24 font-rajdhani">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center ">
@@ -159,8 +174,9 @@ const About = () => {
 </div>
 
 
+{/* name & position */}
 </div>
-<div className="flex justify-center items-center mt-5 "> {/* name & position */}
+<div className="flex justify-center items-center mt-5 "> 
   <div className="">
     <img className="rounded-xl" src="https://webextheme.com/html/loxicat/images/testimonials/testimonial-img1.jpg" alt="" />
   </div>
